@@ -1,5 +1,7 @@
 # Benji's Giga Pet
 
+https://harutd75537553.github.io/Comp484-Project-2/
+
 A small jQuery pet game for COMP 484 Project 2.
 
 The two unique jQuery methods used are:
