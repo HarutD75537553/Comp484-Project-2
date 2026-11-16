@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A tiny Giga Pet game starring Benji.">
+    <title>Benji's Giga Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="game-card">
+      <header class="game-header">
+        <div>
+          <p class="eyebrow">MY VERY RESPONSIBLE PET SIMULATOR</p>
+          <h1>Meet <span class="name"></span></h1>
+        </div>
+        <div class="online-pill"><span class="status-dot"></span><span class="pet-status">Awake</span></div>
+      </header>
+
+      <section class="pet-area" aria-label="Your virtual pet">
+        <div class="pet-picture">
+          <div class="blob"></div>
+          <img class="pet-image" src="images/benji awake.jpg" alt="Benji standing and looking at the camera">
+          <span class="sparkle sparkle-one">+</span>
+          <span class="sparkle sparkle-two">+</span>
+        </div>
+
+        <div class="speech-wrap">
+          <p class="speech" aria-live="polite">yo, what's up?</p>
+          <p class="tiny-note">Benji has strong opinions about snacks.</p>
+        </div>
+      </section>
+
+      <section class="dashboard" aria-label="Pet stats and controls">
+        <div class="stats">
+          <div class="stat-row" data-stat="weight">
+            <div class="stat-label">
+              <span>Weight</span>
+              <strong><span class="weight"></span> lbs</strong>
+            </div>
+            <div class="meter"><div class="meter-fill"></div></div>
+          </div>
+
+          <div class="stat-row" data-stat="happiness">
+            <div class="stat-label">
+              <span>Happiness</span>
+              <strong><span class="happiness"></span> wags/min</strong>
+            </div>
+            <div class="meter"><div class="meter-fill"></div></div>
+          </div>
+        </div>
+
+        <div class="actions" aria-label="Pet actions">
+          <button class="treat-button" type="button"><span>🍪</span>Treat</button>
+          <button class="play-button" type="button"><span>🎾</span>Play</button>
+          <button class="exercise-button" type="button"><span>🏃</span>Exercise</button>
+          <button class="nap-button" type="button"><span>💤</span>Nap</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
